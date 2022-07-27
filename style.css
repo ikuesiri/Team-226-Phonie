@@ -1,14 +1,15 @@
+
+
 *{
-    padding: 0;
+  padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
 
-body{
-    /* display: grid;
-    place-items: center; */
-    /* text-align: center; */
+html, body{
 	background: #0f1423;
+  height: 100%;
+  width: 100%;
 }
 
 :root {
@@ -16,70 +17,6 @@ body{
     --secondary-color: rgb(266,266,266);
     --shadow: 2px 2px 3px rgba(0,0,0,0.7), -2px -2px 3px rgba(255,255,255,0.2);
     --radius : 5px;
-}
-/*  topmost div  */
-
-.alert-div{
-    align-items: center;
-    display: flex ;
-    flex-direction: row ;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #ba55d3;
-
-}
-
-.left-list{
-    flex: 1 ;
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-
-}
-.left-list-item{
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-
-
-.center-alert-div{
-    flex: 2;
-    text-align: center;
-    color: black;
-    font-size: 20px;
-    font-weight: 900;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
-
-.right-list{
-    flex: 1;
-    align-items: center;
-    list-style-type: none;
-    flex-direction: row;
-    display: flex;
-    justify-content: end;
-
-}
-
-.right-list-item{
-    margin-left: 5px;
-    margin-right: 10px;
-}
-
-.alert-btn{
-    padding: 10px;
-    background-color: black;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 15px;
-    cursor: pointer;
-    border-radius: 10px;
-}
-
-.alert-btn:hover{
-    background-color: white;
-    color: black;
 }
 
 /* main container */
@@ -93,14 +30,13 @@ body{
 
 /*  Navbar STyle */
 .navbar{
+    display: grid;
     background-color: var(--secondary-color);
     margin: 10px;
-    /* position: relative; */
-    display: grid;
     align-items: center;
-    /* justify-content: flex-start; */
     grid-template-columns: 1fr 1.2fr;
     margin: 0px;
+    padding: 10px;
 
 }
 
@@ -116,9 +52,6 @@ body{
 }
 
 .nav-items{
-    /* flex: 2;
-    flex-direction: row;
-    display: flex; */
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -126,11 +59,8 @@ body{
     list-style: none;
     padding: 0;
     text-align: start;
-    /* justify-content: space-around; */
-    /* font-size: 20px; */
     font-weight: 900;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    /* justify-content: space-evenly; */
     margin: 0px;
 }
 .nav-items a {
@@ -296,6 +226,91 @@ body{
     margin-left: 10px;
 }
 
+/* Main App Styling */
+
+
+.phonie-container {
+    text-align: center;
+    margin: 10% auto;
+	background: #191c2d;
+	box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    min-height: 30rem;
+
+
+}
+
+.phonie-container h2 {
+    font-size: 32px;
+    margin: 15px 0px;
+    color: var(--primary-color);
+}
+
+.user-details {
+    outline:none;
+    height: 55px;
+	  width: 450px;
+    font-size: 26px;
+    font-weight: 600;
+    padding: 0 20px;
+    margin: 10px 0px 5px;
+    border: 3px solid var(--primary-color);
+    border-radius: var(--radius);
+    text-align: center;
+    color: var(--secondary-color);
+    background: transparent;
+}
+
+#name {
+    height: 45px;
+	width: 300px;
+    font-size: 20px;
+
+}
+
+.phonie-container h5, #display-msg {
+    color: rgb(141, 137, 137);
+    font-style: italic;
+    padding-left: 25px;
+    height: 20px;
+	  width: 31.25rem;
+	  margin: 0px 30px 20px;
+    font-size: 14px;
+}
+
+#display-msg {
+    font-size: 18px;
+    font-weight: 900;
+    
+}
+
+#display-msg > span {
+    color: rgb(27, 211, 27);
+}
+
+#display-msg img {
+    height: 50px;
+    width: 50px;
+    border-radius: var(--radius);
+}
+
+
+#search, #delete-num {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    height: 40px;
+	width: 250px;
+    background-color: var(--primary-color);
+    color: #0f1423;
+    font-size: 20px;
+    font-weight: 700;
+	margin: 10px 15px 30px;
+    padding: 0px 20px;
+    border-radius: var(--radius);
+
+}
+
 
 /* Footer  */
 footer{
@@ -338,76 +353,18 @@ footer{
 }
 
 
-/* Main App Styling */
-
-
-.phonie-container {
-    text-align: center;
-    margin: 10% auto;
-	background: #191c2d;
-	box-shadow: var(--shadow);
-    border-radius: var(--radius);
-    font-family: cursive;
-
-}
-
-.phonie-container h2 {
-    font-size: 32px;
-    margin: 30px 0px;
-    color: var(--primary-color);
-}
-
-.user-details {
-    outline:none;
-    height: 55px;
-	width: 450px;
-    font-size: 26px;
-    font-weight: 600;
-    padding: 0 20px;
-    margin: 20px 0px 5px;
-    border: 3px solid var(--primary-color);
-    border-radius: var(--radius);
-    text-align: center;
-    color: var(--primary-color);
-    background: transparent;
-}
-
-#first-name {
-    height: 45px;
-	width: 300px;
-    font-size: 20px;
-
-}
-
-.phonie-container h5 {
-    color: rgb(141, 137, 137);
-    font-style: italic;
-    padding-left: 25px;
-    height: 20px;
-	width: 500px;
-	margin: 0px 30px 20px;
-}
-
-
-.search{
-    outline: none;
-    cursor: pointer;
-    border: none;
-    height: 50px;
-	width: 450px;
-    background-color: var(--primary-color);
-    color: #0f1423;
-    font-size: 20px;
-    font-weight: 700;
-	margin: 20px 5px;
-    padding: 0px 20px;
-    border-radius: var(--radius);
-
-}
 
 
 /* Media Query for Ipads, Tabs & Mobile phones */
 @media (max-width: 768px) {
+  .main-container {
+        margin: auto;
+        text-align: center;
+        line-height: 1.1;
+        display: Grid;
+        gap: 10px;
+    
+    }
     .navbar{
         grid-template-columns: 1fr;
         text-align: center;
@@ -417,27 +374,19 @@ footer{
         grid-template-columns: 1fr;
     }
     .navbar ul {
-        display: grid;
+/*         display: grid; */
         grid-template-columns: 1fr;
         text-align: center;
-        margin-top: 10px;
+        margin-top: 5px;
     }
 
-    /* .img1{
-        visibility: hidden;
-    } */
+   
     .img2{
-        /* display: none; */
         visibility: hidden;
     }
     .text-div {
-        /* position: absolute; */
-
-        /* display: grid; */
-        /* top: 20px; */
-        /* text-align: center; */
+        
         align-items: center;
-        /* justify-content: center; */
         bottom: 20%;
 
     }
