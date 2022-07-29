@@ -35,7 +35,7 @@ html, body{
     margin: 10px;
     align-items: center;
     grid-template-columns: 1fr 1.2fr;
-    margin: 0px;
+/*     margin: 0px; */
     padding: 10px;
 
 }
@@ -374,54 +374,15 @@ footer{
 
 
 
-/* Media Query for Ipads, Tabs & Mobile phones */
-@media (max-width: 768px) {
-  .main-container {
-        margin: auto;
-        text-align: center;
-        line-height: 1.1;
-        display: Grid;
-        gap: 10px;
-    
-    }
-    .navbar{
-        grid-template-columns: 1fr;
-        text-align: center;
-        padding-top: 10px;
-    }
-    .nav-items {
-        grid-template-columns: 1fr;
-    }
-    .navbar ul {
-/*         display: grid; */
-        grid-template-columns: 1fr;
-        text-align: center;
-        margin-top: 5px;
-    }
-
-   
-    .img2{
-        visibility: hidden;
-    }
-    .text-div {
-        
-        align-items: center;
-        bottom: 20%;
-
-    }
-
-    .main-text{
-        text-align: center;
-    }
-}
 
 
 
 
 
+/* team.html section */
 
 .container {
-  margin: 20px 40px;
+/*   margin: 20px 40px; */
   color: white;
 }
 
@@ -472,51 +433,16 @@ justify-content: space-around;
   font-weight: 100;
   letter-spacing: 3px;
   color: #ccc;
+  text-align: center;
+  
 }
 
 .profile p {
   font-size: 16px;
   margin-top: 20px;
-  text-align: justify;
+  text-align: center;
 }
 
-@media only screen and (max-width: 1150px) {
-  .profiles {
-    flex-direction: column;
-  }
-
-  .profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .profile p {
-    text-align: center;
-    margin: 20px 60px 80px 60px;
-    font-size: 20px;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .heading {
-    font-size: 40px;
-    color: white;
-    text-align: center;
-  }
-
-  .heading span {
-    font-size: 15px;
-  }
-
-  .profiles {
-    margin: 20px 0;
-  }
-
-  .profile p {
-    margin: 20px 10px 80px 10px;
-  }
-}
 
 .contact {
   position: relative;
@@ -655,5 +581,85 @@ span{
   }
   .contactconatiner .contactinfo, .contactform{
     width: 100%;
+  }
+}
+
+/* Media Query for Ipads, Tabs & Mobile phones */
+@media (max-width: 768px) {
+  .main-container {
+        margin: auto;
+        text-align: center;
+        line-height: 1.1;
+        display: Grid;
+        gap: 10px;
+    
+    }
+    .navbar{
+        grid-template-columns: 1fr;
+        text-align: center;
+        place-items: center;
+        padding-top: 10px;
+    }
+    .nav-items {
+        grid-template-columns: 1fr;
+    }
+    .navbar ul {
+/*         display: grid; */
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+   
+    .img2{
+        visibility: hidden;
+    }
+    .text-div {
+        
+        align-items: center;
+        bottom: 20%;
+
+    }
+
+    .main-text{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+  .profiles {
+    flex-direction: column;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile p {
+    text-align: center;
+    margin: 20px 60px 80px 60px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .heading {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+  }
+
+  .heading span {
+    font-size: 15px;
+  }
+
+  .profiles {
+    margin: 20px 0;
+  }
+
+  .profile p {
+    margin: 20px 10px 80px 10px;
   }
 }
